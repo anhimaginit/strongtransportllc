@@ -1,0 +1,182 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(120deg, #8ec5a0 0%, #8ec5fc 100%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.calendar {
+    width: 626px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.calendar h1 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.info p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.date {
+    border: 1px solid #ccc;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.day,
+.day-name {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 80px;
+}
+
+.btn-calendar {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.5s ease-in;
+}
+
+.btn-calendar {
+    background-image: linear-gradient(to right,
+            blue);
+}
+
+.btn-calendar {
+    background-size: 200% auto;
+    color: #fff;
+    box-shadow: 0 0 20px #eee;
+}
+
+.btn-calendar:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-calendar-next {
+    margin-left: 1rem;
+}
+
+.btn-calendar-prev {
+    margin-right: 1rem;
+}
+
+.day.active {
+    background-image: linear-gradient(to right,
+    blue,blue );
+    color: #fff;
+}
+
+.relative-cl{
+    position: relative;
+}
+.absolute-cl{
+    position: absolute;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.absolute-cl .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: #B3E5FC;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.absolute-cl:hover .tooltiptext {
+    visibility: visible;
+}
+
+.position1-cl{
+    top: 3px;
+    left: 62px
+}
+
+.position2-cl{
+    top: 13px;
+    left: 60px
+}
+
+.font-size-11{
+    font-size: 11px!important;
+}
+
+.font-size-14{
+    font-size: 14px!important;
+}
+
+.font-color{
+    color: burlywood;
+}
+.cursor-m{
+    cursor: pointer;
+}
+
+.red-dart{
+    color: #d02406;
+}
+
+#assign-task-modal .form-control{
+    padding: 0px!important;
+}
+
+#assign-task-modal .form-control{
+    width: 100%!important;
+}
+
+.select2-container{
+    width: 100%!important;
+}

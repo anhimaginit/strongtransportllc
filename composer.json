@@ -1,0 +1,17 @@
+{
+	"name": "lodev09/smartadmin-php",
+    "version": "4.0.1",
+    "description": "SmartAdmin PHP",
+	"autoload": {
+		"psr-4": {
+			"SmartUI\\": "lib/smartui",
+			"Common\\": "lib/common",
+			"App\\": "lib/app"
+		}
+	},
+	"require": {
+		"erusev/parsedown": "^1.6",
+		"mpdf/mpdf": "^8.1.3",
+        "phpoffice/phpspreadsheet": "^1.28"
+	}
+}
